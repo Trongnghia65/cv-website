@@ -8,8 +8,8 @@ backend/target/
 !.env.example
 
 # Spring secrets
-application-local.properties
-application-prod.properties
+**/application.properties
+**/application-*.properties
 
 # Node
 frontend/node_modules/
