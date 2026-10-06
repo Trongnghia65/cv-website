@@ -1,0 +1,25 @@
+# Java
+backend/target/
+*.class
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Spring secrets
+application-local.properties
+application-prod.properties
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
