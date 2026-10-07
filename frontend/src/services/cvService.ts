@@ -1,15 +1,15 @@
 import axios from "axios";
 import type { Cv } from "../types/cv";
 
-const API = "http://localhost:8080/api/cvs";
+const API = "https://cv-backend-pkwx.onrender.com/api";
 
 export const getCvs = async (): Promise<Cv[]> => {
-  const response = await axios.get<Cv[]>(API);
+  const response = await axios.get<Cv[]>(`${API}/cvs`);
 
   return response.data;
 };
 export const getCvById = async (id: number): Promise<Cv> => {
-  const response = await fetch(`${API}/${id}`);
+  const response = await fetch(`${API}/cvs/${id}`);
 
   if (!response.ok) {
     throw new Error("Không tìm thấy CV");
