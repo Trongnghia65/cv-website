@@ -3,7 +3,6 @@ import { ArrowDown } from "lucide-react";
 import Navbar from "../components/Navbar";
 import MemberCard from "../components/MemberCard";
 
-import { mockCvs } from "../data/mockCv";
 import { useEffect, useState } from "react";
 import { getCvs } from "../services/cvService";
 import type { Cv } from "../types/cv";
